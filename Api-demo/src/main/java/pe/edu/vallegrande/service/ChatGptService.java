@@ -18,7 +18,7 @@ public class ChatGptService {
         MediaType mediaType = MediaType.parse("application/json");
         // Escapar las comillas internas en la cadena JSON
         RequestBody body = RequestBody.create(mediaType, "[\r\n  {\r\n    \"content\": \"Hello! I'm an AI assistant bot based on ChatGPT 3. How may I help you?\",\r\n    \"role\": \"system\"\r\n  },\r\n  {\r\n    \"content\": " +
-                "\"cuanto es 5+5\",\r\n    \"role\": \"user\"\r\n  }\r\n]\r\n");
+                "\"cuanto es 2*9\",\r\n    \"role\": \"user\"\r\n  }\r\n]\r\n");
 
         Request request = new Request.Builder()
                 .url("https://chatgpt-api8.p.rapidapi.com/")
